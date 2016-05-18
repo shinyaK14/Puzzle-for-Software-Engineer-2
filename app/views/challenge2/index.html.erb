@@ -1,0 +1,53 @@
+<h2> Hack Me If You Can</h2>
+<h3 id="call"> call<font color="#999">/</font>my<font color="#999">/</font>APIs</h3>
+<div id="curl">
+  <%= image_tag 'curl.gif' %>
+</div>
+<p>
+<% if @users.present? %>
+  <hr>
+  <h3 id="winner"> The Winners ( <%= @count %> )</h3>
+  <div id="winner_list">
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="col-md-2">
+          Date
+        </th>
+        <th class="col-md-2">
+          Name
+        </th>
+        <th class="col-md-8">
+          Comment
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td>
+            <%= user.updated_at.strftime("%d-%b-%Y") %>
+          </td>
+          <td>
+            <%= user.username %>
+          </td>
+          <td>
+            <%= user.comment %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <h3> <%= link_to "All winners ( #{@count} )", { action: :winners } %></h3>
+  </div>
+<% end %>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 728_90 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5621408891146926"
+     data-ad-slot="9741860292"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>

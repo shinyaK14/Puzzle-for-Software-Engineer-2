@@ -1,0 +1,7 @@
+= simple_form_for @user, :html => { :class => "form-horizontal" } do |f|
+  = f.hidden_field :token, value: @user.password
+  = f.input :username
+  = error_span(@user[:username])
+  = f.input :comment
+  = error_span(@user[:comment])
+  = f.button :submit, "OK", :class => 'btn-default'
