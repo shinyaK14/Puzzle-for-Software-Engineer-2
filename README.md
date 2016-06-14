@@ -1,4 +1,4 @@
-# Puzzle-for-Software-Engineer-2
+# Puzzle-for-Software-Engineer-2 [![Build Status](https://travis-ci.org/shinyaK14/Puzzle-for-Software-Engineer-2.svg?branch=master)](https://travis-ci.org/shinyaK14/Puzzle-for-Software-Engineer-2)
 
 http://challenge-your-limits2.herokuapp.com/
 
